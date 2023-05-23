@@ -54,7 +54,7 @@ public class Generics<T> {
             return -1;
         for (int i = 0; i < size; i++) {
             if (val.equals(list[i]))
-                return 1;
+                return i;
         }
         return -1;
     }
@@ -75,6 +75,5 @@ public class Generics<T> {
     private void resizeRem(int index) {
         System.arraycopy(list, index + 1, list, index, size - index);
     }
-
 
 }
